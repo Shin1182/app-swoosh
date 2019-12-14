@@ -60,9 +60,8 @@
 			children = (
 				A8A4F63823A26B0700223B0D /* View Components */,
 				A8A4F62623A2664200223B0D /* AppDelegate.swift */,
-				A8A4F62823A2664200223B0D /* LoginViewController.swift */,
+				A8E8EEBD23A56E6E0022E456 /* View Controllers */,
 				A8A4F62A23A2664200223B0D /* Main.storyboard */,
-				A8E8EEB923A5689A0022E456 /* ClassChoiceViewController.swift */,
 				A8A4F62D23A2664300223B0D /* Assets.xcassets */,
 				A8A4F62F23A2664300223B0D /* LaunchScreen.storyboard */,
 				A8A4F63223A2664300223B0D /* Info.plist */,
@@ -76,6 +75,15 @@
 				A8A4F63923A26B7700223B0D /* BorderButton.swift */,
 			);
 			path = "View Components";
+			sourceTree = "<group>";
+		};
+		A8E8EEBD23A56E6E0022E456 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8A4F62823A2664200223B0D /* LoginViewController.swift */,
+				A8E8EEB923A5689A0022E456 /* ClassChoiceViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
