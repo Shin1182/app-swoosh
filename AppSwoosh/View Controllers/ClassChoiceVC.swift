@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ClassChoiceViewController: UIViewController {
+class ClassChoiceVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppSwoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="AppSwoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
         </scene>
-        <!--Class Choice View Controller-->
+        <!--Class ChoiceVC-->
         <scene sceneID="GQm-2y-eTV">
             <objects>
-                <viewController id="d8U-5g-UG0" customClass="ClassChoiceViewController" customModule="AppSwoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d8U-5g-UG0" customClass="ClassChoiceVC" customModule="AppSwoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3FI-ZV-zer">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,10 +195,10 @@
             </objects>
             <point key="canvasLocation" x="942.02898550724649" y="115.7608695652174"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="4dY-Y1-6fJ">
             <objects>
-                <viewController id="mf5-dW-LTd" sceneMemberID="viewController">
+                <viewController id="mf5-dW-LTd" customClass="SkillVC" customModule="AppSwoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lat-nc-VB6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,13 +248,13 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sz8-LH-iiQ" customClass="BorderButton" customModule="AppSwoosh" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="650" width="414" height="66"/>
+                                <rect key="frame" x="20" y="650" width="374" height="66"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.44572513200000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="Wc9-qP-Gzp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
-                                <state key="normal" title="BIGINNER">
+                                <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.65993904000000003" green="1" blue="0.17480957110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
@@ -269,11 +269,11 @@
                             <constraint firstItem="Aop-kh-VV2" firstAttribute="top" secondItem="N7h-lM-iVw" secondAttribute="bottom" constant="50" id="LFo-iG-dDd"/>
                             <constraint firstItem="oPd-aN-Wtj" firstAttribute="top" secondItem="hXb-QQ-hLd" secondAttribute="top" id="PWA-l9-ARb"/>
                             <constraint firstItem="N7h-lM-iVw" firstAttribute="top" secondItem="hXb-QQ-hLd" secondAttribute="top" constant="20" id="VZQ-2L-jGk"/>
-                            <constraint firstItem="hXb-QQ-hLd" firstAttribute="trailing" secondItem="Sz8-LH-iiQ" secondAttribute="trailing" id="XSu-AZ-OWp"/>
+                            <constraint firstItem="hXb-QQ-hLd" firstAttribute="trailing" secondItem="Sz8-LH-iiQ" secondAttribute="trailing" constant="20" id="XSu-AZ-OWp"/>
                             <constraint firstItem="hXb-QQ-hLd" firstAttribute="bottom" secondItem="Sz8-LH-iiQ" secondAttribute="bottom" constant="20" id="YzG-ep-Ijy"/>
                             <constraint firstItem="N7h-lM-iVw" firstAttribute="leading" secondItem="hXb-QQ-hLd" secondAttribute="leading" id="duF-q1-6f8"/>
                             <constraint firstItem="hXb-QQ-hLd" firstAttribute="trailing" secondItem="Aop-kh-VV2" secondAttribute="trailing" id="ote-Eu-jKu"/>
-                            <constraint firstItem="Sz8-LH-iiQ" firstAttribute="leading" secondItem="hXb-QQ-hLd" secondAttribute="leading" id="x6D-9S-hC3"/>
+                            <constraint firstItem="Sz8-LH-iiQ" firstAttribute="leading" secondItem="hXb-QQ-hLd" secondAttribute="leading" constant="20" id="x6D-9S-hC3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hXb-QQ-hLd"/>
                     </view>
