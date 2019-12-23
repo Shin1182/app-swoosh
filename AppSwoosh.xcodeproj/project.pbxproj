@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		932559D4CE6DDBD33CE40134 /* Pods_AppSwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74FD36DBC054A5F65F51B79 /* Pods_AppSwoosh.framework */; };
+		A8A0243423B0E24C00FCA0E8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A0243323B0E24C00FCA0E8 /* Alamofire.framework */; };
 		A8A4F62723A2664200223B0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F62623A2664200223B0D /* AppDelegate.swift */; };
 		A8A4F62923A2664200223B0D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F62823A2664200223B0D /* LoginVC.swift */; };
 		A8A4F62C23A2664200223B0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A4F62A23A2664200223B0D /* Main.storyboard */; };
@@ -18,8 +18,22 @@
 		A8E8EEBF23A579AF0022E456 /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E8EEBE23A579AF0022E456 /* SkillVC.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A8A0243023B0DE8F00FCA0E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1292C195F8DBEEC474D1065F /* Pods-AppSwoosh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSwoosh.release.xcconfig"; path = "Target Support Files/Pods-AppSwoosh/Pods-AppSwoosh.release.xcconfig"; sourceTree = "<group>"; };
+		A8A0243323B0E24C00FCA0E8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		A8A4F62323A2664200223B0D /* AppSwoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSwoosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A4F62623A2664200223B0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8A4F62823A2664200223B0D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -30,7 +44,6 @@
 		A8A4F63923A26B7700223B0D /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BorderButton.swift; path = ../BorderButton.swift; sourceTree = "<group>"; };
 		A8E8EEB923A5689A0022E456 /* ClassChoiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassChoiceVC.swift; sourceTree = "<group>"; };
 		A8E8EEBE23A579AF0022E456 /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
-		F74FD36DBC054A5F65F51B79 /* Pods_AppSwoosh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppSwoosh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA14D92DC355333AF4329538 /* Pods-AppSwoosh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppSwoosh.debug.xcconfig"; path = "Target Support Files/Pods-AppSwoosh/Pods-AppSwoosh.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				932559D4CE6DDBD33CE40134 /* Pods_AppSwoosh.framework in Frameworks */,
+				A8A0243423B0E24C00FCA0E8 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,16 +65,7 @@
 				FA14D92DC355333AF4329538 /* Pods-AppSwoosh.debug.xcconfig */,
 				1292C195F8DBEEC474D1065F /* Pods-AppSwoosh.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		A2DAAA49C5E08AF88B0142F6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F74FD36DBC054A5F65F51B79 /* Pods_AppSwoosh.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A8A4F61A23A2664100223B0D = {
@@ -70,7 +74,6 @@
 				A8A4F62523A2664200223B0D /* AppSwoosh */,
 				A8A4F62423A2664200223B0D /* Products */,
 				02C7BA73CBF7C8D51A7D7331 /* Pods */,
-				A2DAAA49C5E08AF88B0142F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +88,7 @@
 		A8A4F62523A2664200223B0D /* AppSwoosh */ = {
 			isa = PBXGroup;
 			children = (
+				A8A0243323B0E24C00FCA0E8 /* Alamofire.framework */,
 				A8A4F63823A26B0700223B0D /* Model */,
 				A8A4F62623A2664200223B0D /* AppDelegate.swift */,
 				A8E8EEBD23A56E6E0022E456 /* View Controllers */,
@@ -127,12 +131,15 @@
 				A8A4F62123A2664200223B0D /* Resources */,
 				A895516A23A95BB000699659 /* SwiftLint */,
 				3E57E2ACFADC3B107F56BF05 /* [CP] Embed Pods Frameworks */,
+				A8A0243023B0DE8F00FCA0E8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AppSwoosh;
+			packageProductDependencies = (
+			);
 			productName = AppSwoosh;
 			productReference = A8A4F62323A2664200223B0D /* AppSwoosh.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +168,9 @@
 				Base,
 			);
 			mainGroup = A8A4F61A23A2664100223B0D;
+			packageReferences = (
+				A80D783923B0D81400105876 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = A8A4F62423A2664200223B0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -401,6 +411,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2722VV63J4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AppSwoosh/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -421,6 +435,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2722VV63J4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AppSwoosh/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,6 +474,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A80D783923B0D81400105876 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = A8A4F61B23A2664100223B0D /* Project object */;
 }

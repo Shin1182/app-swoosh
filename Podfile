@@ -13,6 +13,6 @@ target 'AppSwoosh' do
   pod 'RxBlocking', '~> 5'
   pod 'RxTest', '~> 5'
   
-  pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'Alamofire', '~> 4.7.2'
 
 end
